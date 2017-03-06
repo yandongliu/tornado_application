@@ -5,7 +5,7 @@ from schematics.types import StringType
 
 
 class UuidStringType(StringType):
-    def validate(self, value):
+    def validate_(self, value):
         try:
             uuid.UUID(value, version=4)
         except ValueError:

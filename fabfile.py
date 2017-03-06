@@ -85,3 +85,8 @@ def lint():
 @task
 def serve():
     local('python app.py')
+
+
+@task
+def test():
+    local('pytest tests')
