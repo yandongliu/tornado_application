@@ -1,4 +1,4 @@
-from models.base import session
+from app.models.base import session
 
 
 class BaseRepository(object):

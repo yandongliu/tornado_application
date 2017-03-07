@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 
-from entities.item import Item
-from .base import EntityMapper
+from app.entities.item import Item
+from app.mappers.base import EntityMapper
 
 
 class ItemMapper(EntityMapper):

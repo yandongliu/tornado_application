@@ -1,6 +1,6 @@
 from schematics.types import StringType
 
-from .base import TimestampModel, UuidStringType
+from app.entities.base import TimestampModel, UuidStringType
 
 
 class User(TimestampModel):

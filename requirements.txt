@@ -13,3 +13,4 @@ ujson==1.33
 wsgiref==0.1.2
 MySQL-python==1.2.5
 schematics==2.0.0.dev2
+futures==3.0.5

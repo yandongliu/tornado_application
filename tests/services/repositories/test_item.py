@@ -1,8 +1,8 @@
 from unittest import TestCase
 
-from entities import Item, User
-from services.repositories.item import ItemRepository
-from services.repositories.user import UserRepository
+from app.entities import Item, User
+from app.services.repositories.item import ItemRepository
+from app.services.repositories.user import UserRepository
 
 
 class TestItemRepository(TestCase):

@@ -4,14 +4,14 @@ from fabric.api import task, local
 from fabric.colors import green
 import sqlalchemy_utils
 
-from entities import Item, User
-from models.base import (
+from app.entities import Item, User
+from app.models.base import (
     create_all_tables,
     engine,
     ro_transaction,
     rw_transaction,
 )
-from models import Item as ModelItem, User as ModelUser
+from app.models import Item as ModelItem, User as ModelUser
 
 
 @task
@@ -84,7 +84,7 @@ def lint():
 
 @task
 def serve():
-    local('python app.py')
+    local('python main.py')
 
 
 @task
